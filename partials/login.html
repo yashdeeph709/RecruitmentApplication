@@ -1,0 +1,27 @@
+<div class="row" data-ng-controller="LoginController">
+<div class="col-md-12" ng-show="progress">
+<center>
+<md-progress-linear class="md-primary" md-mode="buffer" value="{{determinateValue}}" md-buffer-value="{{determinateValue}}">
+</center>
+</div>
+<div class="col-md-3"></div>
+<div class="col-md-6" ng-hide="progress">
+<div class="md-whiteframe-z5" >
+    <md-toolbar class="layout-padding md-toolbar-tools">Admin Login</md-toolbar>
+    <md-content class="layout-padding">
+    <md-input-container>
+        <label>Email</label>
+        <input ng-model="email">
+    </md-input-container>
+    <md-input-container>
+        <label>Password</label>
+        <input type="password" ng-model="password">
+    </md-input-container>
+    <md-button ng-click="login()" class="md-raised md-primary btn-lg">Login</md-button>
+    <md-button ng-click="forgot()" class="md-raised md-primary btn-lg">Forgot Password!</md-button>
+    </md-content>
+</div>
+</div>
+<div class="col-md-3" ng-hide="progress">
+</div>
+</div>

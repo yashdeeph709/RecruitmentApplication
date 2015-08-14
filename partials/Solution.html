@@ -1,0 +1,56 @@
+<div class="row" ng-controller="SolutionsController">  
+<div class="col-md-12">
+<div class="md-whiteframe-z4">
+	<md-toolbar class="md-toolbar-tools layout-padding">
+		          Check the radio button for correct options
+	</md-toolbar>
+	<md-content class="layout-padding">
+<md-radio-group ng-model="solution">
+        <div class="col-md-6">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <md-radio-button ng-value="1" name="solution1"></md-radio-button>
+              </span>
+              <md-input-container>
+              <label>Option 1</label>
+              <input type="text" ng-model="options.one">
+              </md-input-container>
+            </div><!-- /input-group -->
+            <div class="input-group">
+              <span class="input-group-addon">
+                <md-radio-button ng-value="2" name="solution2"></md-radio-button>
+              </span>
+              <md-input-container>
+             <label>Option 2</label>
+              <input type="text" ng-model="options.two">
+              </md-input-container>
+            </div><!-- /input-group -->
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <md-radio-button ng-value="3" name="solution3"></md-radio-button>
+              </span>
+              <md-input-container>
+              <label>Option 3</label>
+              <input type="text" ng-model="options.three">
+              </md-input-container>
+            </div><!-- /input-group -->
+            <div class="input-group">
+              <span class="input-group-addon">
+                <md-radio-button ng-value="4" name="solution4"></md-radio-button>
+              </span>
+              <md-input-container>
+              <label>Option 4</label>
+              <input type="text" ng-model="options.four">
+              </md-input-container>
+            </div><!-- /input-group -->
+            </div>
+            <md-radio-group>
+    </md-content>
+    <div class="panel-footer">
+    <button ng-click="AddSolution()" class="btn btn-info">Done!</button>
+    </div>
+    </div>
+</div>
+</div>

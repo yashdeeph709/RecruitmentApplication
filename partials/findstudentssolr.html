@@ -1,0 +1,78 @@
+<div class="row" data-ng-controller="findstudentcontroller">
+    <div class="col-md-3">
+        <div class="md-whiteframe-z4">
+            <md-toolbar class="md-toolbar-tools layout-padding">
+                Find Student
+            </md-toolbar>
+            <md-content class="layout-padding">
+                <form>
+                    <md-input-container>
+                        <label>Student Name</label>
+                        <input type="text">
+                    </md-input-container>
+                <md-button class="md-primary md-raised" data-ng-click="find()">Find</md-button>
+                </form>
+            </md-content>
+        </div>
+        <div class="md-whiteframe-z5">
+            <md-toolbar class="md-toolbar-tools layout-padding">
+                Filters
+            </md-toolbar>
+            <md-content class="layout-padding">
+                <span class="caption"><b>Institutes</b></span>
+                <ul class="well list" style="list-style:none;height:150px;overflow:scroll;">
+                    <li ng-repeat="collage in collageCodes">
+                        <md-checkbox class="md-primary">{{collage}}</md-checkbox></li>
+                </ul>
+                <span class="caption"><b>Stream</b></span>
+                <ul class="well list" style="list-style:none;height:150px;overflow:scroll;">
+                    <li>
+                        <md-checkbox class="md-primary">IT</md-checkbox></li>
+                    <li>
+                        <md-checkbox class="md-primary">CS</md-checkbox></li>
+                    <li>
+                        <md-checkbox class="md-primary">EC</md-checkbox></li>
+                </ul>
+            </md-content>
+        </div>
+    </div> 
+    <div class="col-md-9">
+        <div class="md-whiteframe-z4">
+            <md-toolbar class="md-toolbar-tools layout-padding">
+                Search Results
+            </md-toolbar>
+            <md-content class="layout-padding">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Institute
+                            </th>
+                            <th>
+                                Stream
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                mobile no
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="student in students">
+                        <td>{{student.name}}</td>
+                        <td>{{student.institute}}</td>
+                        <td>{{student.stream}}</td>
+                        <td>{{student.email}}</td>
+                        <td>{{student.mobileno}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-content>
+        </div>
+    </div>
+</div>

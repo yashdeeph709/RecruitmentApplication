@@ -1,0 +1,149 @@
+    <div class="col-md-12">
+        <div class="md-whiteframe-z5">
+            <md-toolbar class="layout-padding md-toolbar-tools">Academic Details</md-toolbar>
+            <md-content>
+                   <md-tabs md-dynamic-height  md-border-bottom md-stretch-tabs>
+                    <md-tab label="Graduation">
+                    <div class="col-md-12">
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                        <md-select placeholder="Graduation" ng-model="ctrl.userState">
+                                <md-option value="BE">BE</md-option>
+                                <md-option value="Btech">Btech</md-option>
+                                <md-option value="Msc">Msc</md-option>
+                                <md-option value="Other">Other</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <md-select placeholder="Stream" ng-model="ctrl.userState1">
+                                <md-option value="Information Technology">Information Technology</md-option>
+                                <md-option value="Computer Science">Computer Science</md-option>
+                                <md-option value="Electrical">Electrical</md-option>
+                                <md-option value="Other">Other</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <md-select placeholder="Passing Year" ng-model="ctrl.userState1">
+                                <md-option value="2012">2012</md-option>
+                                <md-option value="2013">2013</md-option>
+                                <md-option value="2014">2014</md-option>
+                                <md-option value="2015">2015</md-option>
+                                <md-option value="Other">Other</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                        <md-select placeholder="Institute" ng-model="ctrl.userState2">
+                                <md-option value="2012">Swami Vivekanand</md-option>
+                                <md-option value="2013">Medicaps</md-option>
+                                <md-option value="2014">Acropolis</md-option>
+                                <md-option value="2015">GSITS</md-option>
+                                <md-option value="Other">Vaishav</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <md-select placeholder="University" ng-model="ctrl.userState3">
+                                <md-option value="2012">RGPV</md-option>
+                                <md-option value="2013">GSITS</md-option>
+                                <md-option value="2014">ABCD</md-option>
+                                <md-option value="2015">XYZEE</md-option>
+                                <md-option value="Other">Other</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>Aggregate</label>
+                            <input ng-model="email" placeholder="Aggregate">
+                        </md-input-container>
+                    </div>
+                </div>
+                     <div class="col-md-12">
+                        <md-input-container md-no-float class="layout-padding">
+                           <textarea placeholder="Projects Undertaken"></textarea>
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-12">
+                        <md-input-container md-no-float class="layout-padding">
+                            <textarea placeholder="Acadamic Achievements"></textarea>
+                        </md-input-container>
+                    </div>
+                    </md-tab>
+                    <md-tab label="Higher Secondry">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                        <md-input-container class="layout-padding">
+                            <label>Enter Your Institute Name</label>
+                            <input ng-model="user.institute">
+                        </md-input-container>
+                        </div>
+                        <div class="col-md-6">
+                        <md-input-container class="layout-padding">
+                            <label>Enter Your Board Name</label>
+                            <input ng-model="user.university">
+                        </md-input-container>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                        <md-input-container class="layout-padding">
+                            <label>Enter Your Percentage</label>
+                            <input ng-model="user.institute">
+                        </md-input-container>
+                        </div>
+                        <div class="col-md-6">
+                        <md-input-container class="layout-padding">
+                            <label>Enter Your Passing Year</label>
+                            <input ng-model="user.university">
+                        </md-input-container>
+                        </div>
+                    </div>
+                    </md-tab>
+                    <md-tab label="High School">
+                                        <div class="col-md-12">
+                        <div class="col-md-6">
+                        <md-input-container class="layout-padding">
+                            <label>Enter Your Institute Name</label>
+                            <input ng-model="user.institute">
+                        </md-input-container>
+                        </div>
+                        <div class="col-md-6">
+                        <md-input-container class="layout-padding">
+                            <label>Enter Your Board Name</label>
+                            <input ng-model="user.university">
+                        </md-input-container>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                        <md-input-container class="layout-padding">
+                            <label>Enter Your Percentage</label>
+                            <input ng-model="user.institute">
+                        </md-input-container>
+                        </div>
+                        <div class="col-md-6">
+                        <md-input-container class="layout-padding">
+                            <label>Enter Your Passing Year</label>
+                            <input ng-model="user.university">
+                        </md-input-container>
+                        </div>
+                    </div>
+                    </md-tab>
+                    </md-tabs>
+
+                <div class="col-md-12 layout-padding">
+                <md-button ng-click="" class="pull-right md-raised md-primary">Next</md-button>
+                </div>
+            </md-content>
+        </div>
+    </div>
+</div>

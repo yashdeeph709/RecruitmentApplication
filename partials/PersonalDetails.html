@@ -1,0 +1,57 @@
+<div class="col-md-12">
+  <div class="md-whiteframe-z5">
+    <md-toolbar class="layout-padding md-toolbar-tools">Personal Details</md-toolbar>
+    <md-content>
+    <div class="col-md-12">
+      <div class="col-md-4">
+        <md-input-container class="layout-padding">
+        <label>Enter Your First Name</label>
+        <input ng-model="user.firstname">
+        </md-input-container>
+      </div>
+      <div class="col-md-4">
+        <md-input-container class="layout-padding">
+        <label>Enter Your Last Name</label>
+        <input ng-model="user.lastname">
+        </md-input-container>
+      </div>
+      <div class="col-md-4">
+        <md-input-container class="layout-padding">
+        <label>Enter Birth Date</label>
+        <input type="date" ng-model="user.birthdate">
+        </md-input-container>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="col-md-4">
+        <md-input-container class="layout-padding">
+        <md-select placeholder="*Nationality" ng-model="ctrl.userState">
+        <md-option value="Indian">Indian</md-option>
+        <md-option value="other">Other</md-option>
+        </md-select>
+        </md-input-container>
+      </div>
+      <div class="col-md-4">
+        <md-input-container class="layout-padding">
+        <md-select placeholder="*Marital Status" ng-model="ctrl.userState1">
+        <md-option value="Married">Married</md-option>
+        <md-option value="Unmarried">Unmarried</md-option>
+        </md-select>
+        </md-input-container>
+      </div>
+      <div class="col-md-4">
+        <md-input-container class="layout-padding">
+        <md-select placeholder="*Gender" ng-model="ctrl.userState3">
+        <md-option value="Male">Male</md-option>
+        <md-option value="Female">Female</md-option>
+        <md-option value="Other">Other</md-option>
+        </md-select>
+        </md-input-container>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <md-button ng-click="candidateNext1()" class="pull-right md-raised md-primary btn-lg">Next</md-button>
+    </div>
+    </md-content>
+  </div>
+</div>

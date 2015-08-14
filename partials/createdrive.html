@@ -1,0 +1,86 @@
+<div class="row" ng-controller="CreateDriveController">
+   <div class="col-md-12">
+      <div class="md-whiteframe-z4">
+         <md-toolbar class="md-toolbar-tools layout-padding">
+            Drive Details
+         </md-toolbar>
+         <md-content class="layout-padding">
+            <div class="col-md-6">
+               <md-input-container>
+                  <label>Drive ID</label>
+                  <input type="text" ng-model="drive.DriveID">
+               </md-input-container>
+               <md-input-container>
+                  <label>Venue</label>
+                  <input type="text" ng-model="drive.Venue">
+               </md-input-container>
+               <div class="row">
+                  <div class="col-md-6">
+                     <md-input-container>
+                        <label>City</label>
+                        <input type="text" ng-model="drive.City">
+                     </md-input-container>
+                  </div>
+                  <div class="col-md-6">
+                     <md-input-container>
+                        <label>State</label>
+                        <input type="text" ng-model="drive.State">
+                     </md-input-container>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <md-input-container>
+                        <label>Date and Time</label>
+                        <input type="text" ng-model="drive.DateTime">
+                     </md-input-container>
+                  </div>
+                  <div class="col-md-6">
+                     <md-input-container>
+                        <label>Test Duration</label>
+                        <input type="text" ng-model="drive.Duration">
+                     </md-input-container>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="row">
+                  <div class="col-md-6">
+                     <md-input-container>
+                        <label>Que count tech master <span class="badge">42</span></label>
+                        <input type="number" ng-model="drive.QueTechCount">
+                     </md-input-container>
+                  </div>
+                  <div class="col-md-6">
+                     <md-input-container>
+                        <label>Que count Apti master<span class="badge">42</span></label>
+                        <input type="number" ng-model="drive.QueAptiCount">
+                     </md-input-container>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <md-input-container>
+                        <label>Served Que count tech <span class="badge">42</span></label>
+                        <input type="number" ng-model="drive.ServedTechCount">
+                     </md-input-container>
+                  </div>
+                  <div class="col-md-6">
+                     <md-input-container>
+                        <label>Served Que count Apti <span class="badge">42</span></label>
+                        <input type="number" ng-model="drive.ServedAptiCount">
+                     </md-input-container>
+                  </div>
+               </div>
+               <md-input-container>
+                  <label>Comments</label>
+                  <textarea ng-model="drive.Comments"></textarea>
+               </md-input-container>
+            </div>
+            <div class="col-md-12">
+               <md-button ng-click="create()" class="md-primary md-raised">Create</md-button>
+            </div>
+         </md-content>
+      </div>
+   </div>
+</div>

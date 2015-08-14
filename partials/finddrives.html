@@ -1,0 +1,61 @@
+<div class="row" data-ng-controller="FindDrivesController">
+<div class="col-md-3">
+  <div class="md-whiteframe-z5">
+	  <md-toolbar class="layout-padding md-toolbar-tools">
+     Find Drives
+    </md-toolbar>
+    <md-content class="layout-padding">
+        <form name="FindDriveForm">
+          <md-input-container>
+                <label>Venue:</label>
+                <input type="text" data-ng-model="search.venue">
+          </md-input-container>
+          <md-input-container>
+                <label>City:</label>
+                <input type="text" data-ng-model="search.city">
+          </md-input-container>
+          <md-button ng-click="find()" class="md-raised md-primary">Find</md-button>
+        </form>
+    </md-content>
+    </div>
+</div>
+<div class="col-md-9 ">
+  <div class="md-whiteframe-z5">
+	<md-toolbar class="md-toolbar-tools md-headline">
+  <md-sub-header>Search Results</md-sub-header>
+  </md-toolbar>
+  <md-content class="layout-padding">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>
+            Drive
+          </th>
+          <th>
+            Venue
+          </th>
+          <th>
+            Date
+          </th>
+          <th>
+            City
+          </th>
+          <th>
+            Comments
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="drive in drives| filter:search.venue |filter:search.city">
+      <td><md-button class="md-primary" ui-sref="drivedesc({DriveID:drive.DriveID})">{{drive.DriveID}}</md-button></td>
+      <td>{{drive.Venue}}</td>
+      <td>{{drive.DateTime}}</td> 
+      <td>{{drive.City}}</td>
+      <td>{{drive.Comments}}</td>
+      </tr>
+      </tbody>
+    </table>
+    </md-content>
+</div>
+</div>     
+</div>

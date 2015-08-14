@@ -1,0 +1,77 @@
+<div class="row" ng-controller="DriveMonitorController">
+	<div class="col-md-12">
+		<div class="md-whiteframe-z5">
+			<md-toolbar class="md-toolbar-tools layout-padding">
+			Candidates
+			</md-toolbar>
+			<md-content>
+				<div class="col-md-6 pull-left">
+				<form>
+				 	<md-input-container class="layout-padding">
+				        <label>Search</label>
+				        <input ng-model="text">
+				    </md-input-container>
+   				</form>
+				</div>
+				<div class="col-md-2">
+				<md-switch ng-model="data" class="md-primary">
+				Auto Refresh
+		        </md-switch>
+				</div>
+				<div class="col-md-4">
+					<div class="pull-right">
+						<md-button class="md-primary md-fab md-mini">
+						<i class="fa fa-play" style="font-size:1.6em;padding-top:10px;"></i>
+						<md-tooltip>
+				          Start
+				        </md-tooltip>
+		        		</md-button>
+						<md-button class="md-primary md-fab md-mini">
+						<i class="fa fa-pause" style="font-size:1.6em;padding-top:10px;"></i>
+						<md-tooltip>
+				          Pause
+				        </md-tooltip>
+				        </md-button>
+						<md-button class="md-primary md-fab md-mini">
+						<i class="fa fa-stop" style="font-size:1.6em;padding-top:10px;"></i>
+						<md-tooltip>
+				          Stop
+				        </md-tooltip>
+				        </md-button>
+					</div>
+				</div>
+				<div class="col-md-12">
+				<table class="table table-striped">
+				<tr>
+						<td>Name</td>
+						<td>Email</td>
+						<td>Remaining Time(In min.)</td>
+						<td>Status</td>
+						<td>Action</td>
+				</tr>
+				<tr>
+						<td>Yashdeep Hinge</td>
+						<td>yashdeeph709@gmail.com</td>
+						<td>12</td>
+						<td><span class="badge-warning">completed</span></td>
+						<td><md-button ui-sref="login">Resume</md-button><md-button ui-sref="login">Stop</md-button></td>
+				</tr>
+				<tr>
+						<td>Yashdeep Hinge</td>
+						<td>yashdeeph709@gmail.com</td>
+						<td>12</td>
+						<td><span class="badge-warning">completed</span></td>
+						<td><md-button ui-sref="login">Resume</md-button><md-button ui-sref="login">Stop</md-button></td>
+				</tr>
+				<tr>
+						<td>Yashdeep Hinge</td>
+						<td>yashdeeph709@gmail.com</td>
+						<td>12</td>
+						<td><span class="badge-warning">completed</span></td>
+						<td><md-button ui-sref="login">Resume</md-button><md-button ui-sref="login">Stop</md-button></td>
+				</tr>
+				</table>
+			</md-content>
+		</div>
+	</div>
+</div>

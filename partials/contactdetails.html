@@ -1,0 +1,106 @@
+    <div class="col-md-12">
+        <div class="md-whiteframe-z5">
+            <md-toolbar class="layout-padding md-toolbar-tools">Contact Details</md-toolbar>
+            <md-content>
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>Mobile</label>
+                            <input ng-model="user.mobilenumber">
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>Landline</label>
+                            <input ng-model="user.landlinenumber">
+                        </md-input-container>
+                    </div>
+                <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>Email</label>
+                            <input ng-model="email">
+                        </md-input-container>
+                </div>
+
+                </div>
+                   <div class="col-md-12">
+                    <md-tabs md-selected="3" md-dynamic-height md-autoselect md-border-bottom md-stretch-tabs>
+                    <md-tab label="Temporary Address">
+                    <div class="col-md-12">
+                        <md-input-container class="layout-padding">
+                            <label>Address Line 1</label>
+                            <input ng-model="user.add1">
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-12">
+                            <md-input-container class="layout-padding">
+                            <label>Address Line 2</label>
+                            <input ng-model="user.add2">
+                        </md-input-container>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>Zip Code</label>
+                            <input ng-model="user.zip">
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>City</label>
+                            <input ng-model="user.city">
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>State</label>
+                            <input ng-model="user.state">
+                        </md-input-container>
+                    </div>
+                </div>
+        </md-tab>
+        <md-tab label="Permanent Address">
+                    <div class="col-md-11">
+                        <md-input-container class="layout-padding">
+                            <label>Address Line 1</label>
+                            <input ng-model="user.add3">
+                        </md-input-container>
+                    </div>
+                <div class="col-md-11">
+                        <md-input-container class="layout-padding">
+                            <label>Address Line 2</label>
+                            <input ng-model="user.add4">
+                        </md-input-container>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>Zip Code</label>
+                            <input ng-model="user.zip2">
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>City</label>
+                            <input ng-model="user.city2">
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container class="layout-padding">
+                            <label>State</label>
+                            <input ng-model="user.state2">
+                        </md-input-container>
+                    </div>
+                </div>
+                </md-tab>
+                </md-tabs>
+                </div>
+                <div class="col-md-12">
+                <md-button ng-click="candidateNext2()" class=" pull-right md-raised md-primary btn-md">Next</md-button>
+                </div>
+            </md-content>
+        </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+</div>

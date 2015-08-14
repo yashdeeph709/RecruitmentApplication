@@ -1,0 +1,41 @@
+<div class="row" data-ng-controller="ImportController">
+  <div class="col-md-12">
+  <div class="md-whiteframe-z4">
+	<md-toolbar class="md-toolbar-tools layout-padding">Import Results</md-toolbar>
+    <md-content class="layout-padding">
+        <form>
+            <legend>Import Questions<small>(In CSV format only)</small></legend>
+            <md-button><input type="file" placeholder="Enter Venue"></md-button>
+            <p><a href="">click here</a> to download sample file</p>
+            <md-button data-ng-click="find()" class="md-primary md-raised">upload</md-button>
+        </form>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            User
+          </th>
+          <th>
+            Date
+          </th>
+          <th>
+			     Uploaded file
+          </th>
+          <th>
+            Failed Records
+          </th>
+          <th>
+			     Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    </md-content>
+</div>
+</div>
+</div>     

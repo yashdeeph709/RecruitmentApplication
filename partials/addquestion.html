@@ -1,0 +1,47 @@
+<div class="row" ng-controller="AddQuestionController">
+    <div class="col-md-12">
+        <form>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <md-input-container>
+                        <label>Catagory</label>
+                        <input type="text" ng-model="question.catagory">
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-input-container>
+                        <label>Sub Catagory</label>
+                        <input type="text" ng-model="question.subcatagory">
+                        </md-input-container>
+                    </div>
+                    <div class="col-md-4">
+                        <md-button class="md-raised md-accent pull-right" ng-click="import()">Import Questions</md-button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-whiteframe-z4">
+                        <md-toolbar class="md-toolbar-tools layout-padding">
+                            Question
+                        </md-toolbar>
+                        <md-content class="layout-padding">
+                            <div text-angular ng-model="question.question"></div>
+                        </md-content>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    File:<input type="file">
+                                </div>
+                                <div class="col-md-6">
+                                    <md-button class="md-primary pull-right" ng-click="addQuestion()">next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="row" ng-controller="StudentRegistrationController">
+   <center>
+      <img style="width:150px;height:150px;" src="img\Header-Logo-HotWaxSystems.png">
+   </center>
+</div>
+<div class="row">
+   <div class="col-md-12">
+      <div id="form-container">
+         <div class="page-header text-center">
+            <div id="status-buttons" class="text-center">
+               <a ui-sref-active="active" ui-sref="Registration.personalDetails"><span>1</span>Personal Details</a>
+               <a ui-sref-active="active" ui-sref="Registration.contactDetails"><span>2</span>Contact Details</a>
+               <a ui-sref-active="active" ui-sref="Registration.acadDetails"><span>3</span>Acadamic Details</a>
+               <a ui-sref-active="active" ui-sref="Registration.ExtraActivities"><span>4</span>Extra Curricular</a>
+            </div>
+         </div>
+         <form id="signup-form" ng-submit="processForm()">
+            <div id="form-views" ui-view></div>
+         </form>
+      </div>
+   </div>
+</div>
